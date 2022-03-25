@@ -1,0 +1,117 @@
+/* Estilos de Colores */
+$principal: hsl(171, 66%, 44%);
+$secundario: hsl(233, 100%, 69%);
+$neutral1: hsl(210, 10%, 33%);
+$neutral2: hsl(201, 11%, 66%);
+
+
+/* Cambiando estilos predeterminados de Bootstrap */
+
+$primary: $principal;
+$secondary: $secundario;
+$btn-padding-x: 1.7rem;
+$btn-padding-y: .6rem;
+$btn-border-radius: 50px;
+$btn-color: #FFF;
+
+@import "../libs/bootstrap/scss/bootstrap.scss";
+
+body{
+    color: $neutral1;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    font-weight: bold;
+}
+
+p{
+    color: $neutral2;
+}
+
+.btn{
+    color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 27%);
+    &:hover{
+        color: white;
+    }
+}
+
+
+
+footer{
+    background-color: $neutral2;
+}
+
+ul{
+    list-style-type: none;
+    li{
+        a{
+            color: $neutral1;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1,h2{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .btn{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .mobile-small{
+        width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .devices{
+        width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+
+    .subtitle{
+        width: 50%;
+    }
+
+    p{
+        width: 75%;
+    }
+
+    .blacklists-text{
+        width: 90%;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .computer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+    .computer{
+        width: 150%;
+    }
+}
